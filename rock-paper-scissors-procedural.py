@@ -16,8 +16,8 @@ while True:
 
     # check that input against the winning combinations
     winning_combinations = {
-        'rock':'paper',
-        'paper':'scissors',
+        'rock':'scissors',
+        'paper':'rock',
         'scissors':'paper'
     }
     result = ''
@@ -32,7 +32,8 @@ while True:
         else:
             result = 'Draw'
             break
-
+    print('Your shape: ' + player1 )
+    print('Your opponents shape: ' + player2)
     print(result)
     # print out the result (Win,Lose,Draw)
     play_again = ''
